@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.medsos{
+    padding: 5px 0;
+    background-color:black;
+    height: 50px;
+}
+.medsos ul li{
+    display: inline-block;
+    color: whitesmoke;
+    margin-right: 10px;
+}
+.header{
+    background-color: orange;
+    color: black;
+    height: 200px;
+}
+.header-logo{
+    float: left;
+    font-size: 20px;
+    padding: 20px;
+}
+.header-list li{
+    float: left;
+    padding: 33px 20px;
+}
+.copy-container h1{
+    font-size: 100px;
+}
+.copy-container h2{
+    font-size: 50px;
+}
+.copy-container span{
+    color: #ff4a4a;
+}
+.copy-container h3{
+    font-size: 30px;
+}
+h1{
+    text-align: center;
+    color: orange;
+    padding: 20px;
+    background-color: black;
+}
+h2{
+    text-align: center;
+    color: black;
+    padding: 20px;
+    background-color: orange;
+}
+h3{
+    text-align: center;
+    color: black;
+    padding: 20px;
+    background-color: orange;
+}
+nav{
+    background-color: orange;
+    display: grid;
+    place-items: left;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s ease-in;
+    font-size: 18px;
+}
+nav ul a:hover{
+    background-color: black;
+    color: white;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item img:hover{
+    transform: scale(1.04);
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+}
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+}
+.item button:hover{
+    transform: scale(1.08);
+}
+@media screen and (max-width: 768px){
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.footer{
+    background-color: black;
+    color: #fff;
+    height: 120px;
+    padding: 40px;
+}
+.footer-logo{
+    float: left;
+    font-size: 32px;
+}
+.footer-list{
+    float: right;
+}
+.footer-list li{
+    padding-bottom: 20px;
+}
